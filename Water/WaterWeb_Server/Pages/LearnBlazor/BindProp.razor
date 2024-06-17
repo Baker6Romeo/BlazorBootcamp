@@ -4,7 +4,7 @@
 Name: @product.Name <br />
 Is Active: @product.IsActive <br />
 Price: @product.Price <br />
-<input type="number" name="name" value="@product.Price"/>
+<input type="number" name="name" @bind-value="@product.Price"/>
 
 @code {
     Water_Models.LearnBlazorModels.Demo_Product product = new()
