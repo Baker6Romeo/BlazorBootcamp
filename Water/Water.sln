@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WaterWeb_Server", "WaterWeb
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WaterWeb_Client", "WaterWeb_Client\WaterWeb_Client.csproj", "{27438F09-68A8-4733-BA2E-D8DA2B30FAB0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Water_Models", "Water_Models\Water_Models.csproj", "{9860033D-69A2-494E-B936-C0B3EE711C0B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{27438F09-68A8-4733-BA2E-D8DA2B30FAB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{27438F09-68A8-4733-BA2E-D8DA2B30FAB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{27438F09-68A8-4733-BA2E-D8DA2B30FAB0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9860033D-69A2-494E-B936-C0B3EE711C0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9860033D-69A2-494E-B936-C0B3EE711C0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9860033D-69A2-494E-B936-C0B3EE711C0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9860033D-69A2-494E-B936-C0B3EE711C0B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

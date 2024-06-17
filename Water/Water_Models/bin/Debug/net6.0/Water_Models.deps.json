@@ -6,14 +6,6 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v6.0": {
-      "WaterWeb_Server/1.0.0": {
-        "dependencies": {
-          "Water_Models": "1.0.0"
-        },
-        "runtime": {
-          "WaterWeb_Server.dll": {}
-        }
-      },
       "Water_Models/1.0.0": {
         "runtime": {
           "Water_Models.dll": {}
@@ -22,11 +14,6 @@
     }
   },
   "libraries": {
-    "WaterWeb_Server/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
     "Water_Models/1.0.0": {
       "type": "project",
       "serviceable": false,

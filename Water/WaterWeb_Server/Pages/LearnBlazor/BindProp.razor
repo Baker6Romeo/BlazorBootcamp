@@ -1,7 +1,17 @@
 ﻿@page "/LearnBlazor/bindprop"
 
-<h3>BindProp</h3>
+<h3>Product</h3>
+Name: @product.Name <br />
+Is Active: @product.IsActive <br />
+Price: @product.Price <br />
+<input type="number" name="name" value="@product.Price"/>
 
 @code {
-
+    Water_Models.LearnBlazorModels.Demo_Product product = new()
+        {
+            Id = 1,
+            Name = "Rose Candle",
+            Price = 10.99,
+            IsActive = true
+        };
 }

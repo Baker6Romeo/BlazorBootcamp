@@ -30,3 +30,7 @@ C:\Development\BlazorBootcamp\Water\WaterWeb_Server\obj\Debug\net6.0\refint\Wate
 C:\Development\BlazorBootcamp\Water\WaterWeb_Server\obj\Debug\net6.0\WaterWeb_Server.pdb
 C:\Development\BlazorBootcamp\Water\WaterWeb_Server\obj\Debug\net6.0\WaterWeb_Server.genruntimeconfig.cache
 C:\Development\BlazorBootcamp\Water\WaterWeb_Server\obj\Debug\net6.0\ref\WaterWeb_Server.dll
+C:\Development\BlazorBootcamp\Water\WaterWeb_Server\bin\Debug\net6.0\Water_Models.dll
+C:\Development\BlazorBootcamp\Water\WaterWeb_Server\bin\Debug\net6.0\Water_Models.pdb
+C:\Development\BlazorBootcamp\Water\WaterWeb_Server\obj\Debug\net6.0\WaterWeb_Server.csproj.AssemblyReference.cache
+C:\Development\BlazorBootcamp\Water\WaterWeb_Server\obj\Debug\net6.0\WaterWeb.F0312422.Up2Date
