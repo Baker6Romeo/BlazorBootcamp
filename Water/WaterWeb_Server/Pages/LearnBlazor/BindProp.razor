@@ -4,9 +4,14 @@
 Name: @product.Name <br />
 Is Active: @product.IsActive <br />
 Price: @product.Price <br />
+This product is: @(product.IsActive ? "Active" : "Inactive") <br />
+<br />
+Active: 
+<input type="checkbox" name="name" @bind="product.IsActive"/> <br />
 <input type="number" name="name" @bind="@product.Price" @bind:event="oninput"/>
 
 @code {
+
     Water_Models.LearnBlazorModels.Demo_Product product = new()
         {
             Id = 1,
