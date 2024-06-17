@@ -5,6 +5,8 @@ VisualStudioVersion = 17.10.34928.147
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WaterWeb_Server", "WaterWeb_Server\WaterWeb_Server.csproj", "{BDAFE77D-2BEE-40F4-9996-B0F2BB343D72}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WaterWeb_Client", "WaterWeb_Client\WaterWeb_Client.csproj", "{27438F09-68A8-4733-BA2E-D8DA2B30FAB0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{BDAFE77D-2BEE-40F4-9996-B0F2BB343D72}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BDAFE77D-2BEE-40F4-9996-B0F2BB343D72}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BDAFE77D-2BEE-40F4-9996-B0F2BB343D72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27438F09-68A8-4733-BA2E-D8DA2B30FAB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27438F09-68A8-4733-BA2E-D8DA2B30FAB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27438F09-68A8-4733-BA2E-D8DA2B30FAB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27438F09-68A8-4733-BA2E-D8DA2B30FAB0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
