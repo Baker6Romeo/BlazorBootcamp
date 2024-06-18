@@ -1,16 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Development\\BlazorBootcamp\\Water\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{BDAFE77D-2BEE-40F4-9996-B0F2BB343D72}|WaterWeb_Server\\WaterWeb_Server.csproj|c:\\development\\blazorbootcamp\\water\\waterweb_server\\pages\\learnblazor\\bindprop.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BDAFE77D-2BEE-40F4-9996-B0F2BB343D72}|WaterWeb_Server\\WaterWeb_Server.csproj|solutionrelative:waterweb_server\\pages\\learnblazor\\bindprop.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9860033D-69A2-494E-B936-C0B3EE711C0B}|Water_Models\\Water_Models.csproj|c:\\development\\blazorbootcamp\\water\\water_models\\learnblazormodels\\demo_product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9860033D-69A2-494E-B936-C0B3EE711C0B}|Water_Models\\Water_Models.csproj|solutionrelative:water_models\\learnblazormodels\\demo_product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -18,34 +9,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 203,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": -1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Demo_Product.cs",
-              "DocumentMoniker": "C:\\Development\\BlazorBootcamp\\Water\\Water_Models\\LearnBlazorModels\\Demo_Product.cs",
-              "RelativeDocumentMoniker": "Water_Models\\LearnBlazorModels\\Demo_Product.cs",
-              "ToolTip": "C:\\Development\\BlazorBootcamp\\Water\\Water_Models\\LearnBlazorModels\\Demo_Product.cs",
-              "RelativeToolTip": "Water_Models\\LearnBlazorModels\\Demo_Product.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAbAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-17T21:53:47.361Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "BindProp.razor",
-              "DocumentMoniker": "C:\\Development\\BlazorBootcamp\\Water\\WaterWeb_Server\\Pages\\LearnBlazor\\BindProp.razor",
-              "RelativeDocumentMoniker": "WaterWeb_Server\\Pages\\LearnBlazor\\BindProp.razor",
-              "ToolTip": "C:\\Development\\BlazorBootcamp\\Water\\WaterWeb_Server\\Pages\\LearnBlazor\\BindProp.razor",
-              "RelativeToolTip": "WaterWeb_Server\\Pages\\LearnBlazor\\BindProp.razor",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAsAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-17T21:41:45.353Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:12:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"

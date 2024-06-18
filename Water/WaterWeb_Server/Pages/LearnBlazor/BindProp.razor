@@ -5,18 +5,37 @@ Name: @product.Name <br />
 Is Active: @product.IsActive <br />
 Price: @product.Price <br />
 This product is: @(product.IsActive ? "Active" : "Inactive") <br />
+Selected Property: @selectedProperty <br />
+@if (!String.IsNullOrWhiteSpace(selectedProperty))
+{
+    <p>Property Value: @product.ProductProperties.FirstOrDefault(n => n.Key==selectedProperty).Value</p>
+}
 <br />
 Active: 
 <input type="checkbox" name="name" @bind="product.IsActive"/> <br />
-<input type="number" name="name" @bind="@product.Price" @bind:event="oninput"/>
+<input type="number" name="name" @bind="@product.Price" @bind:event="oninput"/> <br />
+Product Properties:
+<select @bind=selectedProperty>
+    @foreach (var prop in product.ProductProperties)
+    {
+        <option value="@prop.Key">@prop.Key</option>
+    }
+</select>
 
 @code {
+    public string selectedProperty = "";
 
     Water_Models.LearnBlazorModels.Demo_Product product = new()
         {
             Id = 1,
             Name = "Rose Candle",
             Price = 10.99,
-            IsActive = true
+            IsActive = true,
+            ProductProperties = new List<Water_Models.LearnBlazorModels.Demo_ProductProp>()
+            {
+                new Water_Models.LearnBlazorModels.Demo_ProductProp { Id = 1, Key = "Color", Value = "Black"},
+                new Water_Models.LearnBlazorModels.Demo_ProductProp { Id = 2, Key = "Flavor", Value = "Rose Jasmine"},
+                new Water_Models.LearnBlazorModels.Demo_ProductProp { Id = 3, Key = "Size", Value = "20oz"}
+            }
         };
 }

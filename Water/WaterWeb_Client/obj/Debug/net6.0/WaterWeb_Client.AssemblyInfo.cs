@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WaterWeb_Client")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+efc430de998c62d69a8b855a9c24aa01043c9b0b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0a0721bba5451f00127012c0fa49a143f3b08442")]
 [assembly: System.Reflection.AssemblyProductAttribute("WaterWeb_Client")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WaterWeb_Client")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
