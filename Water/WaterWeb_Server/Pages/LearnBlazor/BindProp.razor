@@ -1,26 +1,38 @@
 ﻿@page "/LearnBlazor/bindprop"
 
-<h3>Product</h3>
-Name: @product.Name <br />
-Is Active: @product.IsActive <br />
-Price: @product.Price <br />
-This product is: @(product.IsActive ? "Active" : "Inactive") <br />
-Selected Property: @selectedProperty <br />
-@if (!String.IsNullOrWhiteSpace(selectedProperty))
-{
-    <p>Property Value: @product.ProductProperties.FirstOrDefault(n => n.Key==selectedProperty).Value</p>
-}
-<br />
-Active: 
-<input type="checkbox" name="name" @bind="product.IsActive"/> <br />
-<input type="number" name="name" @bind="@product.Price" @bind:event="oninput"/> <br />
-Product Properties:
-<select @bind=selectedProperty>
-    @foreach (var prop in product.ProductProperties)
-    {
-        <option value="@prop.Key">@prop.Key</option>
-    }
-</select>
+<h2 class="text-success">Single Product</h2>
+<div class="row">
+    <div class="col-6 border p-3">
+        <h3 class="text-primary">Product Playground</h3>
+        <hr />
+        <div>
+            Active: <input type="checkbox" name="name" @bind="product.IsActive" /> <br />
+        </div>
+        <div><input type="number" name="name" @bind="@product.Price" @bind:event="oninput" /> <br /></div>
+        <div>
+            Product Properties:
+            <select @bind=selectedProperty>
+                @foreach (var prop in product.ProductProperties)
+                {
+                    <option value="@prop.Key">@prop.Key</option>
+                }
+            </select>
+        </div>
+    </div>
+    <div class="col-6 border p-2">
+        <h3 class="text-primary">Product Summary</h3>
+        <hr />
+        Name: @product.Name <br />
+        Is Active: @product.IsActive <br />
+        Price: @product.Price <br />
+        This product is: @(product.IsActive ? "Active" : "Inactive") <br />
+        Selected Property: @selectedProperty <br />
+        @if (!String.IsNullOrWhiteSpace(selectedProperty))
+        {
+            <p>Property Value: @product.ProductProperties.FirstOrDefault(n => n.Key == selectedProperty).Value</p>
+        }
+    </div>
+</div>
 
 @code {
     public string selectedProperty = "";
@@ -33,9 +45,9 @@ Product Properties:
             IsActive = true,
             ProductProperties = new List<Water_Models.LearnBlazorModels.Demo_ProductProp>()
             {
-                new Water_Models.LearnBlazorModels.Demo_ProductProp { Id = 1, Key = "Color", Value = "Black"},
-                new Water_Models.LearnBlazorModels.Demo_ProductProp { Id = 2, Key = "Flavor", Value = "Rose Jasmine"},
-                new Water_Models.LearnBlazorModels.Demo_ProductProp { Id = 3, Key = "Size", Value = "20oz"}
+                new Demo_ProductProp { Id = 1, Key = "Color", Value = "Black"},
+                new Demo_ProductProp { Id = 2, Key = "Flavor", Value = "Rose Jasmine"},
+                new Demo_ProductProp { Id = 3, Key = "Size", Value = "20oz"}
             }
         };
 }

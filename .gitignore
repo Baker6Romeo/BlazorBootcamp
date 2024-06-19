@@ -1,1 +1,4 @@
 *.vsidx
+/Water/.vs/
+/Water/WaterWeb_Server/bin/Debug/
+/Water/WaterWeb_Server/obj/Debug/
