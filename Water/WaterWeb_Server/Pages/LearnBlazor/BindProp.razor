@@ -33,17 +33,26 @@
         }
     </div>
 </div>
-<h2 class="text-success">Product Table</h2>
-<div>
-    @foreach (var product in products)
-    {
-        <div class="row">
-            <div class="col-4"><input type="text" name="name" @bind="@product.Name" @bind:event="oninput" /></div>
-            <div class="col-4"><input type="number" name="price" @bind="@product.Price" @bind:event="oninput" /></div>
-            <div class="col-4"><input type="checkbox" name="isActive" @bind="product.IsActive" /></div>
-        </div>
-    }
+<div class="col-12 pt-4">
+    <h2 class="text-success">Product Table</h2>
+    <table class="table table-striped">
+        <tbody>
+            @foreach (var product in products)
+            {
+                <tr>
+                    <td><input type="text" name="name" @bind="@product.Name" @bind:event="oninput" /></td>
+                    <td><input type="number" name="price" @bind="@product.Price" @bind:event="oninput" /></td>
+                    <td><input type="checkbox" name="isActive" @bind="product.IsActive" /></td>
+                </tr>
+            }
+        </tbody>
+    </table>
 </div>
+<h2 class="text-success">Product Summary</h2>
+@foreach(var product in products)
+{
+    <p>@product.Name [@product.Price] is @(product.IsActive ? "Active" : "Inactive")</p>
+}
 
 @code {
     public string selectedProperty = "";
