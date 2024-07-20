@@ -1,28 +1,28 @@
 @page "/LearnBlazor/demoproduct"
 <h2 class="text-primary">Demo Product</h2>
-<div class="row" style="background-color: #0d6efd">
+<div class="border p-2 mt-2" style="background-color: azure">
+    <div class="row">
     @foreach (var product in products)
     {
-        <div class="col-4 border p-3" style="background-color: #6c757d">
-            <h3>Product - @product.Id</h3>
+        <div class="bg-light border m-1 col-5" style="background-color: #6c757d">
+            <h4 class="text-secondary">Product - @product.Id</h4>
             Name - @product.Name
-            Show Properties: <input type="checkbox" name="isActive" @bind="product.IsActive" />
+            Show Properties: <input type="checkbox" @bind-value="product.IsActive" checked=@(product.IsActive ? "checked" : null)/>
             @if (product.IsActive)
             {
                 @foreach (var prop in product.ProductProperties)
                 {
                     <p>@prop.Key - @prop.Value</p>
-                    <br/>
                 }
             }
-            <div class="row">
-                <button>Delete</button>
-                <button>Edit</button>
-            </div>
-            
+            <br/>
+            <input type="button" class="btn-danger" style="width: 100px;" value="Delete"/>
+            <input type="button" class="btn-success" style="width: 100px;" value="Edit"/>
+
         </div>
-        
+
     }
+    </div>
 </div>
 @code
 {
