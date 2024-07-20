@@ -1,0 +1,62 @@
+@page "/LearnBlazor/demoproduct"
+<h2 class="text-primary">Demo Product</h2>
+<div class="row" style="background-color: #0d6efd">
+    @foreach (var product in products)
+    {
+        <div class="col-4 border p-3" style="background-color: #6c757d">
+            <h3>Product - @product.Id</h3>
+            Name - @product.Name
+            Show Properties: <input type="checkbox" name="isActive" @bind="product.IsActive" />
+            @if (product.IsActive)
+            {
+                @foreach (var prop in product.ProductProperties)
+                {
+                    <p>@prop.Key - @prop.Value</p>
+                    <br/>
+                }
+            }
+            <div class="row">
+                <button>Delete</button>
+                <button>Edit</button>
+            </div>
+            
+        </div>
+        
+    }
+</div>
+@code
+{
+    
+    List<Demo_Product> products = new();
+    
+    protected override void OnInitialized()
+    {
+        products.Add(new()
+        {
+            Id = 1,
+            Name = "Midnight Blaze",
+            Price = 10.99,
+            IsActive = false,
+            ProductProperties = new()
+            {
+                new Demo_ProductProp { Id = 1, Key = "Flavor", Value = "Rose"},
+                new Demo_ProductProp { Id = 2, Key = "Size", Value = "20oz"},
+                new Demo_ProductProp { Id = 3, Key = "Color", Value="Purple" }
+            }
+        });
+
+        products.Add(new()
+        {
+            Id = 2,
+            Name = "Blossom Lily",
+            Price = 13.99,
+            IsActive = true,
+            ProductProperties = new()
+            {
+                new Demo_ProductProp { Id = 1, Key = "Flavor", Value = "Lily" },
+                new Demo_ProductProp { Id = 2, Key = "Size", Value = "18oz" },
+                new Demo_ProductProp {Id = 3,Key = "Color",Value = "White"}
+            }
+        });
+    }
+}
