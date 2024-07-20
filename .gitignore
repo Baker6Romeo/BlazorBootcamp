@@ -1,8 +1,11 @@
 *.vsidx
+.idea/
+/Water/.idea
 /Water/.vs/
 /Water/WaterWeb_Server/bin/
 /Water/WaterWeb_Server/obj/
 /Water/.vs/
 /Water/WaterWeb_Client/obj/
+/Water/WaterWeb_Client/bin/
 /Water/Water_Models/bin/
 /Water/Water_Models/obj/
